@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: recipe-sharing
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/recipe_sharing?useSSL=false
+    username: root
+    password: "1234"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    org:
+      hibernate: ERROR
+
+cloudinary:
+  cloud-name: env-dev
+  api-key: 187427667356774
+  api-secret: fRbg9JrqLfBSwl617tBh0g6eGQg
